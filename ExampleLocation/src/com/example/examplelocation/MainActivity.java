@@ -55,13 +55,6 @@ public class MainActivity extends Activity implements LocationListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-		// Código para mostrar el "fragment_main.xml" layout 
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-			.add(R.id.container, new PlaceholderFragment())
-			.commit();
-		}
 		
 		//Se le pide a la clase "R.java" los layout widgets "textView2" y "textView4". 
 		setLatitudeText((TextView) findViewById(R.id.textView2));
