@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements LocationListener {
 	 */
 	public void onResume(){
 		super.onResume();
-		getLocationManager().requestLocationUpdates(LocationManager.GPS_PROVIDER, 100, 1, this);
+		getLocationManager().requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 1, this);
 	}
 	
 	/*
